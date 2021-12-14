@@ -8,6 +8,8 @@ export const config: BeachballConfig = {
   disallowedChangeTypes: ['major', 'prerelease'],
   tag: 'latest',
   generateChangelog: true,
+  push: false,
+  branch: 'origin/experiment/rc-release',
   scope: getScopes(),
   registry:
     'https://uifabric.pkgs.visualstudio.com/4ed167b9-ac3a-405b-b967-443af8db8961/_packaging/rc-test/npm/registry/',
