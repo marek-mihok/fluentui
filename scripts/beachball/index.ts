@@ -10,7 +10,7 @@ export const config: BeachballConfig = {
   generateChangelog: true,
   scope: getScopes(),
   registry:
-    'https://uifabric.pkgs.visualstudio.com/4ed167b9-ac3a-405b-b967-443af8db8961/_packaging/ling-test/npm/registry/',
+    'https://uifabric.pkgs.visualstudio.com/4ed167b9-ac3a-405b-b967-443af8db8961/_packaging/rc-test/npm/registry/',
   changelog: {
     groups: [getVNextChangelogGroups()],
   },
@@ -21,12 +21,12 @@ export const config: BeachballConfig = {
         path.join(packagePath, '.npmrc'),
         `
 ; begin auth token
-//uifabric.pkgs.visualstudio.com/4ed167b9-ac3a-405b-b967-443af8db8961/_packaging/ling-test/npm/registry/:username=uifabric
-//uifabric.pkgs.visualstudio.com/4ed167b9-ac3a-405b-b967-443af8db8961/_packaging/ling-test/npm/registry/:_password=${authToken}
-//uifabric.pkgs.visualstudio.com/4ed167b9-ac3a-405b-b967-443af8db8961/_packaging/ling-test/npm/registry/:email=npm requires email to be set but doesn't use the value
-//uifabric.pkgs.visualstudio.com/4ed167b9-ac3a-405b-b967-443af8db8961/_packaging/ling-test/npm/:username=uifabric
-//uifabric.pkgs.visualstudio.com/4ed167b9-ac3a-405b-b967-443af8db8961/_packaging/ling-test/npm/:_password=${authToken}
-//uifabric.pkgs.visualstudio.com/4ed167b9-ac3a-405b-b967-443af8db8961/_packaging/ling-test/npm/:email=npm requires email to be set but doesn't use the value
+//uifabric.pkgs.visualstudio.com/4ed167b9-ac3a-405b-b967-443af8db8961/_packaging/rc-test/npm/registry/:username=uifabric
+//uifabric.pkgs.visualstudio.com/4ed167b9-ac3a-405b-b967-443af8db8961/_packaging/rc-test/npm/registry/:_password=${authToken}
+//uifabric.pkgs.visualstudio.com/4ed167b9-ac3a-405b-b967-443af8db8961/_packaging/rc-test/npm/registry/:email=npm requires email to be set but doesn't use the value
+//uifabric.pkgs.visualstudio.com/4ed167b9-ac3a-405b-b967-443af8db8961/_packaging/rc-test/npm/:username=uifabric
+//uifabric.pkgs.visualstudio.com/4ed167b9-ac3a-405b-b967-443af8db8961/_packaging/rc-test/npm/:_password=${authToken}
+//uifabric.pkgs.visualstudio.com/4ed167b9-ac3a-405b-b967-443af8db8961/_packaging/rc-test/npm/:email=npm requires email to be set but doesn't use the value
 ; end auth token
       `,
       );
