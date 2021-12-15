@@ -1,0 +1,7 @@
+{
+  "type": "prerelease",
+  "comment": "Bump to RC",
+  "packageName": "@fluentui/react-positioning",
+  "email": "lingfangao@hotmail.com",
+  "dependentChangeType": "patch"
+}
